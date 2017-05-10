@@ -1,0 +1,58 @@
+/*
+ * Copyright (C) 2015 Baidu, Inc. All Rights Reserved.
+ */
+apply plugin: 'com.android.application'
+
+repositories {
+    flatDir {
+        dir 'libs'
+    }
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "25.0.2"
+
+    signingConfigs {
+        // 需要签名不然，无法使用地图服务
+        debug{
+            storeFile file("debug.keystore")
+            storePassword "longsys888"
+            keyAlias "dmandroidappkeystorealias"
+            keyPassword "longsys8848"
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+        instrumentTest.setRoot('tests')
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    defaultConfig {
+        applicationId "com.dmsys.airdisk"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 3
+        versionName "1.0.0.3"
+    }
+    lintOptions {
+        abortOnError false
+        disable "ResourceType"
+    }
+}
+
+dependencies {
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.2.9'
+
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    compile 'q.rorbin:badgeview:1.1.0'
+    compile 'com.facebook.fresco:fresco:1.3.0'
+
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.1'
+}

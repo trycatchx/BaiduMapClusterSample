@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="badgeview-1.1.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/49c9d675a74aabc27b432783bd9a9320a2321099/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/49c9d675a74aabc27b432783bd9a9320a2321099/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/q.rorbin/badgeview/1.1.0/cbb9e58ac8e4db841315e645fbd75a058125c008/badgeview-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
