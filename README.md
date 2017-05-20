@@ -1,1 +1,2 @@
-![下载.gif](http://upload-images.jianshu.io/upload_images/2788235-1449b423fbc95918.gif?imageMogr2/auto-orient/strip)
+
+[更多详细介绍请看我的博客地址](http://www.jianshu.com/p/6679164324f3)
