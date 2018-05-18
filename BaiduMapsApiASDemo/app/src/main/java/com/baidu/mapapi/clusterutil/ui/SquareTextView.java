@@ -12,6 +12,10 @@ import android.widget.TextView;
 public class SquareTextView extends TextView {
     private int mOffsetTop = 0;
     private int mOffsetLeft = 0;
+	
+	
+	
+	
 
     public SquareTextView(Context context) {
         super(context);
